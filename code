@@ -1,39 +1,39 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="MoneyWise Architecture">
-    <mxGraphModel dx="1100" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+  <diagram name="MoneyWise Architecture" id="vA2UKRc3N7FAxLxsdwAq">
+    <mxGraphModel dx="1077" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
 
         <!-- Frontend -->
-        <mxCell id="2" value="Frontend (moneywise-frontend)" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="20" y="20" width="250" height="400" as="geometry"/>
+        <mxCell id="2" value="Frontend (moneywise-frontend)" style="swimlane;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="260" height="350" as="geometry"/>
         </mxCell>
-        <mxCell id="3" value="• HTML, CSS, JavaScript\n• Pages: Login, Signup, Dashboard\n• Role-based Dashboard\n• Charts via Chart.js\n• Fetch API to call backend" style="text;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
-          <mxGeometry x="10" y="50" width="230" height="300" as="geometry"/>
+        <mxCell id="3" value="• HTML, CSS, JavaScript&#10;• Pages: Login, Signup, Dashboard&#10;• Role-based Dashboard&#10;• Charts via Chart.js&#10;• Fetch API to call backend" style="text;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="2">
+          <mxGeometry x="10" y="50" width="240" height="300" as="geometry"/>
         </mxCell>
 
         <!-- Backend -->
         <mxCell id="4" value="Backend (moneywise-backend)" style="swimlane;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="300" y="20" width="300" height="400" as="geometry"/>
+          <mxGeometry x="320" y="40" width="260" height="350" as="geometry"/>
         </mxCell>
-        <mxCell id="5" value="• Node.js with Express\n• MongoDB (Mongoose ODM)\n• RESTful Routes: /auth, /expenses, /deposits, /admin\n• Controllers: login, register, stats, admin\n• Middleware: JWT auth, role check" style="text;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="4">
-          <mxGeometry x="10" y="50" width="280" height="300" as="geometry"/>
+        <mxCell id="5" value="• Node.js with Express&#10;• MongoDB (Mongoose ODM)&#10;• RESTful Routes: /auth, /expenses, /deposits, /admin&#10;• Controllers: login, register, stats, admin&#10;• Middleware: JWT auth, role check" style="text;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="4">
+          <mxGeometry x="10" y="50" width="240" height="300" as="geometry"/>
         </mxCell>
 
-        <!-- MongoDB -->
+        <!-- Database -->
         <mxCell id="6" value="MongoDB Atlas" style="swimlane;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="640" y="20" width="220" height="400" as="geometry"/>
+          <mxGeometry x="620" y="40" width="260" height="350" as="geometry"/>
         </mxCell>
-        <mxCell id="7" value="Collections:\n• users\n• expenses\n• deposits\n\nQueries:\n• Daily login stats\n• Top active users\n• Hourly expenses" style="text;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="6">
-          <mxGeometry x="10" y="50" width="200" height="300" as="geometry"/>
+        <mxCell id="7" value="Collections:&#10;• users&#10;• expenses&#10;• deposits&#10;&#10;Queries:&#10;• Daily login stats&#10;• Top active users&#10;• Hourly expenses" style="text;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="6">
+          <mxGeometry x="10" y="50" width="240" height="300" as="geometry"/>
         </mxCell>
 
         <!-- Arrows -->
-        <mxCell id="8" style="endArrow=block;" edge="1" parent="1" source="2" target="4">
+        <mxCell id="8" style="endArrow=block;html=1;" edge="1" parent="1" source="2" target="4">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="9" style="endArrow=block;" edge="1" parent="1" source="4" target="6">
+        <mxCell id="9" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="6">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
       </root>
